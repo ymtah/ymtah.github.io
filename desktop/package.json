@@ -3,7 +3,7 @@
   "version": "0.3.0",
 
   "main": "index.html",
-  "node-remote": "play.pokemonshowdown.com",
+  "node-remote": "http://108.248.181.14-413.psim.us/",
   "no-edit-menu": false,
   "window": {
 	  "icon": "icons/icon_32x32.png",
