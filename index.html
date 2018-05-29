@@ -18,10 +18,16 @@
 				elem.src = src.replace(/.*\/?data\//g, 'ymtah.github.io/data/');
 				document.head.appendChild(elem);
 			}
-			var Config = {testclient: true};
+			var Config = {index: true};
 			(function() {
 				if (location.search !== '') {
-					document.location.replace('http://108.248.181.14-413.psim.us/');
+					var m = /\?~~(([^:\/]*)(:[0-9]*)?)/.exec(location.search);
+					if (m) {
+						Config.server = {
+							id: GOBF,
+							host: 108.248.181.14,
+							port: 413
+						};
 					} else {
 						alert('Unrecognised query string syntax: ' + location.search);
 					}
