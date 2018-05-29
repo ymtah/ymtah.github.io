@@ -24,9 +24,9 @@
 					var m = /\?~~(([^:\/]*)(:[0-9]*)?)/.exec(location.search);
 					if (m) {
 						Config.server = {
-							id: m[108.248.181.14],
+							id: m[1],
 							host: m[2],
-							port: (m[3] && parseInt(m[3].substr(1))) || 413
+							port: (m[3] && parseInt(m[3].substr(1))) || 8000
 						};
 					} else {
 						alert('Unrecognised query string syntax: ' + location.search);
