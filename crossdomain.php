@@ -15,7 +15,7 @@ if (preg_match('/^([a-z0-9-_\.]*?)\.psim\.us$/', $host, $m)) {
 $protocol = @$_REQUEST['protocol'] ?? 'http:';
 
 if ($config['host'] !== 'showdown') {
-	include_once 'http://108.248.181.14-413.psim.us/config/servers.inc.php';
+	include_once 'https://ymtah.github.io/config/servers.inc.php';
 
 	$hyphenpos = strrpos($config['host'], '-');
 	if ($hyphenpos) {
