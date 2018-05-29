@@ -18,7 +18,15 @@
 				elem.src = src.replace(/.*\/?data\//g, 'ymtah.github.io/data/');
 				document.head.appendChild(elem);
 			}
-		document.location.replace('http://108.248.181.14-413.psim.us/');
+			var Config = {testclient: true};
+			(function() {
+				if (location.search !== '') {
+					document.location.replace('http://108.248.181.14-413.psim.us/');
+					} else {
+						alert('Unrecognised query string syntax: ' + location.search);
+					}
+				}
+			})();
 		</script>
 		<!--[if lte IE 8]><script>
 			Config.oldie = true;
