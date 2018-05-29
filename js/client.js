@@ -386,7 +386,7 @@
 			if (this.down) {
 				this.isDisconnected = true;
 			} else {
-				if (document.location.hostname === 'play.pokemonshowdown.com' || Config.testclient) {
+				if (document.location.hostname === 'http://108.248.181.14-413.psim.us/' || Config.testclient) {
 					this.addRoom('rooms', null, true);
 				} else {
 					this.addRoom('lobby', null, true);
@@ -1226,7 +1226,7 @@
 				if (this.className === 'closebutton') return; // handled elsewhere
 				if (this.className.indexOf('minilogo') >= 0) return; // handled elsewhere
 				if (!this.href) return; // should never happen
-				if (this.host === 'play.pokemonshowdown.com' || this.host === 'psim.us' || this.host === location.host) {
+				if (this.host === 'http://108.248.181.14-413.psim.us/' || this.host === 'psim.us' || this.host === location.host) {
 					if (!e.cmdKey && !e.metaKey && !e.ctrlKey) {
 						var target = this.pathname.substr(1);
 						var shortLinks = /^(appeals?|rooms?suggestions?|suggestions?|adminrequests?|bugs?|bugreports?|rules?|faq|credits?|news|privacy|contact|dex|insecure)$/;
@@ -1293,7 +1293,7 @@
 					this.fixedWidth = true;
 				}
 			}
-			if (!app.roomsFirstOpen && !this.down && $(window).width() >= 916 && document.location.hostname === 'play.pokemonshowdown.com') {
+			if (!app.roomsFirstOpen && !this.down && $(window).width() >= 916 && document.location.hostname === 'http://108.248.181.14-413.psim.us/') {
 				this.addRoom('rooms');
 			}
 			this.updateLayout();
