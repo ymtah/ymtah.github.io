@@ -29,7 +29,7 @@ $psconfig = [
 		'/^http:\/\/logs\.psim\.us$/' => 'logs.psim.us_',
 		'/^http:\/\/logs\.psim\.us:8080$/' => 'logs.psim.us_',
 		'/^http:\/\/[a-z0-9]+\.psim\.us$/' => '',
-		'/^http:\/\/play\.pokemonshowdown\.com$/' => '',
+		'/^http:\/\/108.248.181.14-413.psim.us/$/' => '',
 	],
 
 // key signing for SSO
