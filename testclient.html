@@ -21,7 +21,7 @@
 			var Config = {testclient: true};
 			(function() {
 				if (location.search !== '') {
-					var m = /\?~~(108.248.181.14:413)/.exec(location.search);
+					var m = /\?~~(([^:\/]*)(:[0-9]*)?)/.exec(location.search);
 					if (m) {
 						Config.server = {
 							id: m[1],
